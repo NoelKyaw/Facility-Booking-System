@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Sports Facility Booking System Version 1.1 14/10/16</title>
+
+</head>
+<body>
+<h1>Sports Facility Booking System Version 1.1 14/10/16</h1>
+
+<h2>What is it?</h2>
+
+<p>This is the software solution for sports facility bookings and cancellation. Features included are:</p>
+
+<ul>
+<li>Creation and maintenance of memeber information</li>
+<li>Search for facility based on various criteria</li>
+<li>Booking of facility</li>
+<li>Cancelling a booking</li>
+<li>Generate various type of reports</li>
+<li>Subscribe the latest sport news</li>
+</ul>
+
+
+<h2>The Latest Version</h2>
+
+<ul>
+<li>A brand new look and feel</li>
+<li>Information update</li>
+<li>Extensive bug fixes</li>
+</ul>
+
+
+<h2>Documentation</h2>
+
+<p>The system will be able to book facilities for the future six(6) days. The system can only place and cancel booking three(3) hours before the target booking time-slot. The location search has a higher priority than court search, which means when the location is selected the court criteria will be ignored. The RSS Feed New source can be change to sports facility related news lately, but for now it is hard coded.</p>
+
+<h3>Sample Data for Database</h3>
+
+<h4>Entity Relational Diagram</h4>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1725146/SA39_PROG_PROJ_IMAGE/EntityRelationDiagram.png" alt="" /></p>
+
+<h4>Sample Customer Database</h4>
+
+<p>Customer Table</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1725146/SA39_PROG_PROJ_IMAGE/Screen%20Shot%202014-10-16%20at%2011.50.59%20AM.png" alt="" /></p>
+
+<p>Staff Table</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1725146/SA39_PROG_PROJ_IMAGE/Screen%20Shot%202014-10-16%20at%201.04.12%20PM.png" alt="" /></p>
+
+<p>Note:</p>
+
+<ul>
+<li>Assume every sports facilities can be booked everyday (365 days a year)</li>
+</ul>
+
+
+<h2>Installation</h2>
+
+<ol>
+<li>Copy entire project folder to local directory</li>
+<li>Restore the latest version database file, namely <code>BookingSystemDBBackup</code></li>
+<li>Double click the <code>FacilityBookingSystem</code> to run the application</li>
+</ol>
+
+
+<p>Note:</p>
+
+<ul>
+<li>The dafault <em>User ID</em> and <em>Password</em> are both <code>admin</code></li>
+<li>The formate of <em>Customer ID</em> start with capital letter <strong>A</strong>, like <code>A000000001</code></li>
+</ul>
+
+
+<h2>Contacts</h2>
+
+<p>Team 9B Member List</p>
+
+<table>
+<thead>
+<tr>
+<th>Member Name</th>
+<th>Email Address</th>
+<th>Phone number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chen Gong</td>
+<td>a0129162@nus.edu.sg</td>
+<td>9128-8095</td>
+</tr>
+<tr>
+<td>Kyaw Zay Yar Maung</td>
+<td>a0132380@nus.edu.sg</td>
+<td>8381-7419</td>
+</tr>
+<tr>
+<td>Li Xinyang</td>
+<td>a0123453@u.nus.edu</td>
+<td>9092-5266</td>
+</tr>
+<tr>
+<td>Soe Lynn Htike</td>
+<td>a0112406@nus.edu.sg</td>
+<td>8626-6033</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Sport Facility Booking System</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">SA39 Team 9B</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+</body>
+</html>
